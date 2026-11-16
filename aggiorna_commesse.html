@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it"><head><meta charset="utf-8"><title>Aggiorna elenco commesse</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:"Segoe UI",Calibri,Arial,sans-serif;max-width:980px;margin:20px auto;padding:0 14px;color:#1f2933;background:#f1f3f6}
+h2{border-bottom:3px solid #e20600;padding-bottom:8px}
+.box{background:#fff;border:1px solid #d9dee4;border-radius:8px;padding:14px;margin:12px 0}
+*{box-sizing:border-box}
+table{width:100%;border-collapse:collapse;table-layout:fixed}th{text-align:left;font-size:12px;color:#6b7785;text-transform:uppercase;padding:2px 4px}
+td{padding:3px 4px}input,textarea{font:15px "Segoe UI",Calibri,Arial,sans-serif;padding:7px;border:1px solid #b8c1cb;border-radius:6px;width:100%}
+textarea{height:110px}
+button{font:600 15px "Segoe UI",Calibri,Arial,sans-serif;padding:9px 16px;margin:8px 8px 0 0;border:1px solid #8a96a3;border-radius:6px;background:#fff;cursor:pointer}
+td.mv{width:44px;padding:0 0 0 4px}.mvs{display:flex;flex-direction:column;gap:1px}
+.mvs button{width:34px;height:19px;margin:0;padding:0;border:1px solid #d9dee4;background:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.mvs button:first-child{border-radius:6px 6px 0 0}.mvs button:last-child{border-radius:0 0 6px 6px}
+.mvs button:hover:not(:disabled){background:#e4e8ed}.mvs button:disabled{opacity:.3;cursor:default}
+.mvs svg{width:15px;height:15px;stroke:#1f2933;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+button.main{background:#e20600;border-color:#e20600;color:#fff}button.x{padding:6px 10px;color:#b00020;margin:0}
+.small{font-size:13px;color:#6b7785}.ok{color:#1b7f3b;font-weight:600}
+</style></head><body>
+<h2>Aggiorna elenco commesse</h2>
+<div class="small">Mettere questo file nella stessa cartella di <code>commesse.js</code>: l'elenco attuale viene caricato da solo.</div>
+<div class="box"><b>1. Elenco commesse</b>
+<table><thead><tr><th style="width:230px">Commessa</th><th>Descrizione</th><th style="width:52px"></th><th style="width:48px"></th></tr></thead><tbody id="r"></tbody></table>
+<button id="add">+ Aggiungi riga</button></div>
+<div class="box"><b>2. Oppure incolla da Excel</b>
+<div class="small">Copia due colonne (commessa e descrizione) e incollale qui: vengono aggiunte all'elenco. Le commesse già presenti vengono aggiornate.</div>
+<textarea id="p" placeholder="HSV0080406&#9;DESCRIZIONE DELLA COMMESSA"></textarea>
+<button id="pa">Aggiungi all'elenco</button></div>
+<div class="box"><b>3. Salva</b><div class="small">Scarica il nuovo file e sostituisci <code>commesse.js</code> nella cartella condivisa.</div>
+<button id="d" class="main">Scarica commesse.js</button> <span id="m" class="ok"></span></div>
+<script src="commesse.js"></script>
+<script>
+String.prototype.trim=function(){return this.replace(/^[\s\u00A0\u200B-\u200F\u2060\uFEFF]+|[\s\u00A0\u200B-\u200F\u2060\uFEFF]+$/g,'')};
+var R=document.getElementById('r'),M=document.getElementById('m');
+function row(c,d){
+ var tr=document.createElement('tr');
+ tr.innerHTML='<td><input class="c"></td><td><input class="d"></td><td><button class="x" title="Elimina">&#10005;</button></td>'+
+ '<td class="mv"><div class="mvs"><button class="up" title="Sposta su"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button><button class="dn" title="Sposta giù"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button></div></td>';
+ tr.querySelector('.c').value=c||'';tr.querySelector('.d').value=d||'';
+ tr.querySelector('.x').onclick=function(){tr.remove();upd()};
+ tr.querySelector('.up').onclick=function(){var pv=tr.previousElementSibling;if(pv){R.insertBefore(tr,pv);upd();tr.scrollIntoView({block:'nearest',behavior:'smooth'})}};
+ tr.querySelector('.dn').onclick=function(){var nx=tr.nextElementSibling;if(nx){R.insertBefore(nx,tr);upd();tr.scrollIntoView({block:'nearest',behavior:'smooth'})}};
+ R.appendChild(tr);upd();return tr;
+}
+function upd(){Array.prototype.forEach.call(R.children,function(tr){tr.querySelector('.up').disabled=!tr.previousElementSibling;tr.querySelector('.dn').disabled=!tr.nextElementSibling})}
+function get(){var o=[];Array.prototype.forEach.call(R.children,function(tr){var c=tr.querySelector('.c').value.trim().toUpperCase(),d=tr.querySelector('.d').value.trim();if(c)o.push({c:c,d:d})});return o}
+function find(c){var f=null;Array.prototype.forEach.call(R.children,function(tr){if(tr.querySelector('.c').value.trim().toUpperCase()===c)f=tr});return f}
+(window.COMMESSE||[]).forEach(function(x){row(x.c,x.d)});if(!R.children.length)row();
+document.getElementById('add').onclick=function(){row().querySelector('.c').focus()};
+document.getElementById('pa').onclick=function(){
+ var n=0;document.getElementById('p').value.split(/\r?\n/).forEach(function(l){
+  if(!l.trim())return;var p=l.split(/\t|;/),c=(p[0]||'').trim().toUpperCase(),d=(p.slice(1).join(' ')||'').trim();if(!c)return;
+  var f=find(c);if(f){f.querySelector('.d').value=d||f.querySelector('.d').value}else row(c,d);n++});
+ document.getElementById('p').value='';M.textContent=n+' righe elaborate.';
+};
+document.getElementById('d').onclick=function(){
+ var o=get(),seen={},u=[];o.forEach(function(x){if(!seen[x.c]){seen[x.c]=1;u.push(x)}});
+ var a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['window.COMMESSE='+JSON.stringify(u)+';'],{type:'text/javascript'}));a.download='commesse.js';a.click();
+ M.textContent='Scaricate '+u.length+' commesse.';
+};
+</script><div style="text-align:center;font-size:12px;color:#6b7785;padding:14px 0">v 2.0 © BISBIGLIA FABIO</div>
+</body></html>
