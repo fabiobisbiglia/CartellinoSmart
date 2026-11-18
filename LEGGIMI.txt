@@ -1,7 +1,7 @@
-GENERATORE CARTELLINI MAGAZZINO - VARIANTE A4E16
+CARTELLINOSMART - VARIANTE A4E17
 A4 QUADRANTI, STOCK E FORZABILE, FONT CONSOLA MONO INCORPORATO
 
-Questa variante deriva dalla A4E15. La A4E15, la versione standard e gli archivi aziendali originali non sono stati modificati.
+Questa variante deriva dalla A4E16. La A4E16, la versione standard e gli archivi aziendali originali non sono stati modificati.
 
 FORMATO DI STAMPA
 Foglio A4 verticale, suddiviso in quattro quadranti uguali. In ogni quadrante è centrato un cartellino da 95 × 138,5 mm. Restano 5 mm di margine per lato in ogni quadrante. Per stampare scegliere A4 verticale, margini “Nessuno” e scala 100%; controllare che l’anteprima mostri quattro cartellini su un solo foglio.
@@ -16,7 +16,7 @@ Le intestazioni “CODICE MATERIALE”, “DESCRIZIONE”, “QTA”, “COMMESS
 Q/K/E sono portate a 42 pt; è in grassetto soltanto la lettera selezionata. Il peso Book (400) è usato per le intestazioni e le lettere stock non selezionate; Bold (700) per i valori e per la sola lettera stock selezionata. Non è distribuito alcun font secondario. La SIL Open Font License 1.1 e il FONTLOG sono incorporati nel codice HTML e inclusi anche come file separati.
 
 OPZIONE “FORZA STOCK E”
-Ogni riga ha un pulsante E, con glifo portato a 22 px per allinearsi visivamente alle icone del cestino e della bandierina, accanto alle azioni; è disattivato per impostazione predefinita. Quando è attivo, sul solo cartellino di quella riga viene evidenziato lo stock E; il valore originale dell’anagrafica non viene modificato. Su schermi stretti il pulsante mostra anche l’etichetta “Forza E”.
+Ogni riga ha il pulsante FORZA STOCK E, disattivato per impostazione predefinita e coordinato con cestino e bandierina; la forzatura vale solo sul cartellino stampato. Quando è attivo, sul solo cartellino di quella riga viene evidenziato lo stock E; il valore originale dell’anagrafica non viene modificato. L’etichetta “FORZA STOCK” e la lettera E sono visibili anche su schermi stretti.
 
 AVVIO
 Estrai il pacchetto e apri index.html dalla cartella estratta con Chrome o Edge aggiornato. Tieni tutti i file inclusi nella stessa cartella per mantenere l’uso offline.
@@ -47,3 +47,9 @@ https://commons.wikimedia.org/wiki/File:Hitachi.svg
 ALTEZZE CAMPI
 Le sei righe rispettano le misure richieste nell’ordine dall’alto al basso: 19, 32, 30, 19, 19 e 19 mm.
 Cartellino esterno invariato: 95 × 138,5 mm. Tenendo conto dei bordi superiore e inferiore da 0,25 mm, le righe interne misurano: Codice 19 mm, Descrizione 32 mm, Logo 30 mm, QTA/Commessa 19 mm, Ubicazione 19 mm, Stock 19 mm. Il totale interno è 138 mm.
+
+
+NUOVO NOME E NAVIGAZIONE
+Il titolo della pagina e il bookmark sono CartellinoSmart. Premi TAB per passare da un campo compilabile all’altro e INVIO per passare alla riga successiva; quando ci sono suggerimenti codice/commessa, INVIO seleziona prima il suggerimento evidenziato. Guida rapida e segnalazioni sono espandibili; la sezione segnalazioni si trova sotto l’anteprima. Il pulsante mobile “Dati” torna all’inserimento.
+
+Il footer mostra CartellinoSmart v. 2.7-A4E17 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
