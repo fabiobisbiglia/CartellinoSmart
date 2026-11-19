@@ -1,16 +1,16 @@
-CARTELLINOSMART - VARIANTE A4E21
+CARTELLINOSMART - VERSIONE 2.7.2
 PROFILI CLASSIC/MAXI, FONT CONSOLA MONO INCORPORATO, OFFLINE
 
-PALETTE MATERIAL 3 — A4E22
-L’interfaccia a schermo usa ruoli colore Material 3 nominati (primary/on-primary, container, surface/surface-container, on-surface, outline e error), in schemi chiaro e scuro derivati dal colore sorgente Ferlog #E20600 con Material Color Utilities. Gli errori sono distinti dal colore principale del brand; per lo stato positivo sono definiti token applicativi dedicati. I valori sono inclusi in CSS: non viene caricata alcuna libreria o risorsa online a runtime. Gli stili della media print non sono stati cambiati: misure, font, colori, profili e generazione dei cartellini restano invariati.
+PALETTE MATERIAL 3 — VERSIONE 2.7.2
+L’interfaccia a schermo usa ruoli colore Material 3 nominati (primary/on-primary, container, surface/surface-container, on-surface, outline e error), in schemi chiaro e scuro derivati dal colore sorgente Ferlog #E20600 con Material Color Utilities. Gli errori sono distinti dal colore principale del brand; per lo stato positivo sono definiti token applicativi dedicati. I valori sono inclusi in CSS: non viene caricata alcuna libreria o risorsa online a runtime. La stampa viene aggiornata solo nella disposizione CLASSIC: quattro cartellini contigui in un blocco 2 × 2 centrato. Le misure 84 × 120 mm, font, contenuti e auto-fit restano invariati; il layout MAXI non cambia.
 
-INTERFACCIA MATERIAL 3 (A4E22)
-La UI è stata rifinita con superfici tonali, card a contorno morbido, stati di focus ad alto contrasto e componenti responsive. La landing di scelta profilo distingue chiaramente CLASSIC come profilo principale e MAXI come formato grande. Gli stili Material 3 agiscono solo sull’interfaccia a schermo: misure millimetriche, font, auto-fit e impaginazione dei cartellini stampati restano invariati.
+INTERFACCIA MATERIAL 3 (VERSIONE 2.7.2)
+La UI è stata rifinita con superfici tonali, card a contorno morbido, stati di focus ad alto contrasto e componenti responsive. La landing di scelta profilo distingue chiaramente CLASSIC come profilo principale e MAXI come formato grande. Gli stili Material 3 agiscono solo sull’interfaccia a schermo. La griglia CLASSIC ora è contigua e centrata; dimensioni dei cartellini, font, auto-fit e logica di compilazione restano invariati. Il layout di stampa MAXI è invariato.
 
-Questa variante deriva dalla A4E19. La A4E19, le versioni precedenti e gli archivi aziendali originali non sono stati modificati.
+Questa release riprende la numerazione pubblica della serie 2.7.x e prosegue dalla versione 2.7.1.
 
 FORMATO DI STAMPA
-CLASSIC è il profilo predefinito: quattro cartellini 84 × 120 mm in griglia 2 × 2, centrati sul foglio A4, con contorno tratteggiato per il taglio. Per stampare scegliere A4, margini “Nessuno” e scala 100%; la nota anteprima indica il taglio.
+CLASSIC è il profilo predefinito: quattro cartellini 84 × 120 mm uniti in un blocco 2 × 2, centrato sul foglio A4. I lati si toccano e condividono una sola linea tratteggiata sulle giunzioni; il contorno tratteggiato indica il taglio. Per stampare scegliere A4, margini “Nessuno” e scala 100%; la nota anteprima indica il taglio.
 MAXI usa quattro quadranti A4 con un cartellino 95 × 138,5 mm centrato in ciascuno; scegliere A4 verticale, margini “Nessuno” e scala 100%.
 
 FONT E DIMENSIONI
@@ -23,7 +23,7 @@ Le intestazioni “CODICE MATERIALE”, “DESCRIZIONE”, “QTA”, “COMMESS
 Q/K/E sono impostate a 36,5 pt in CLASSIC e 42 pt in MAXI; è in grassetto soltanto la lettera selezionata. Il peso Book (400) è usato per le intestazioni e le lettere stock non selezionate; Bold (700) per i valori e per la sola lettera stock selezionata. Non è distribuito alcun font secondario. La SIL Open Font License 1.1 e il FONTLOG sono incorporati nel codice HTML e inclusi anche come file separati.
 
 OPZIONE “FORZA STOCK E”
-Solo il profilo MAXI mostra il pulsante FORZA STOCK E, disattivato per impostazione predefinita e coordinato con cestino e bandierina; il profilo CLASSIC non include questo selettore. La forzatura vale solo sul cartellino stampato. Quando è attivo, sul solo cartellino di quella riga viene evidenziato lo stock E; il valore originale dell’anagrafica non viene modificato. L’etichetta “FORZA STOCK” è più compatta e la lettera E resta visibile anche su schermi stretti; cestino e bandierina usano pulsanti icona da 40 × 39 px.
+Solo il profilo MAXI mostra il pulsante FORZA STOCK E, disattivato per impostazione predefinita e coordinato con cestino e bandierina; il profilo CLASSIC non include questo selettore. La forzatura vale solo sul cartellino stampato. Quando è attivo, sul solo cartellino di quella riga viene evidenziato lo stock E; il valore originale dell’anagrafica non viene modificato. L’etichetta “FORZA STOCK” è più compatta e la lettera E resta visibile anche su schermi stretti; il pulsante Stock E, cestino, bandierina e ciascun pulsante di spostamento sono alti 40 px; i due comandi di spostamento sono disposti affiancati.
 
 CAMPO CODICE MATERIALE
 Il codice inserito è limitato a 22 caratteri. Su desktop il campo è circa il 21% più stretto rispetto alla A4E17; su telefono si adatta alla larghezza disponibile. Gli altri campi mantengono le dimensioni precedenti.
@@ -56,16 +56,16 @@ https://commons.wikimedia.org/wiki/File:Hitachi.svg
 
 ALTEZZE CAMPI E FORMATI
 MAXI mantiene il cartellino 95 × 138,5 mm e le sei righe da 19, 32, 30, 19, 19 e 19 mm (codice, descrizione, logo, QTA/commessa, ubicazione, stock).
-CLASSIC usa quattro cartellini 84 × 120 mm su A4, in griglia 2 × 2 centrata sul foglio. Le righe proporzionali sono 16,5, 27,5, 26, 16,5, 16,5 e 16,5 mm; il bordo esterno è tratteggiato per indicare il taglio. L’auto-fit font è specifico per ciascun formato.
+CLASSIC usa quattro cartellini 84 × 120 mm uniti in una griglia 2 × 2 centrata sul foglio A4. Le righe proporzionali sono 16,5, 27,5, 26, 16,5, 16,5 e 16,5 mm; i lati centrali sono condivisi da un’unica linea tratteggiata, come il contorno esterno. L’auto-fit font è specifico per ciascun formato.
 
 
 PROFILI DI STAMPA
-Al primo avvio si sceglie CLASSIC (profilo predefinito) o MAXI; il pulsante CAMBIA PROFILO, a sinistra del logo Ferlog, consente lo switch in ogni momento. La scelta è memorizzata sul dispositivo. I campi, l’anagrafica e le commesse sono condivisi e i cartellini già compilati non si perdono cambiando profilo. CLASSIC stampa quattro cartellini 84 × 120 mm centrati 2 × 2 con linee di taglio tratteggiate; MAXI stampa quattro cartellini grandi e separati. Il selettore stock è visibile solo in MAXI.
+Al primo avvio si sceglie CLASSIC (profilo predefinito) o MAXI; il pulsante CAMBIA PROFILO, a sinistra del logo Ferlog, consente lo switch in ogni momento. La scelta è memorizzata sul dispositivo. I campi, l’anagrafica e le commesse sono condivisi e i cartellini già compilati non si perdono cambiando profilo. CLASSIC stampa quattro cartellini 84 × 120 mm uniti in un blocco 2 × 2 centrato, con bordi tratteggiati e lati centrali condivisi; MAXI stampa quattro cartellini grandi, separati e centrati nei rispettivi quadranti. Il selettore stock è visibile solo in MAXI.
 
 NUOVO NOME E NAVIGAZIONE
 Il titolo della pagina e il bookmark sono CartellinoSmart. Premi TAB per passare da un campo compilabile all’altro e INVIO per passare al cartellino successivo; quando ci sono suggerimenti codice/commessa, INVIO seleziona prima il suggerimento evidenziato. Guida rapida e segnalazioni sono espandibili; la sezione segnalazioni si trova sotto l’anteprima. Il pulsante mobile “Dati” torna all’inserimento.
 
-Il footer mostra CartellinoSmart v. 2.7-A4E22 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
+Il footer mostra CartellinoSmart v. 2.7.2 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
 
 
 CODICI NON TROVATI
