@@ -1,0 +1,8 @@
+Documentazione ufficiale consultata per la palette A4E22:
+
+- Material Design 3 — Foundations: https://m3.material.io/foundations
+- Material Design 3 — Color roles: https://m3.material.io/styles/color/roles
+- Material Design 3 — Design tokens: https://m3.material.io/foundations/design-tokens/overview
+- Material Design 3 — Customization: https://m3.material.io/foundations/customization
+
+I token colore di A4E22 derivano dal seed Ferlog #E20600 tramite @material/material-color-utilities (usata solo in fase di generazione; non inclusa né richiesta a runtime). Le superfici container sono mappate alla scala tonale neutra generata dal medesimo schema.

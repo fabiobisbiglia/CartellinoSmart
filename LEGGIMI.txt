@@ -1,7 +1,10 @@
 CARTELLINOSMART - VARIANTE A4E21
 PROFILI CLASSIC/MAXI, FONT CONSOLA MONO INCORPORATO, OFFLINE
 
-INTERFACCIA MATERIAL 3 (A4E21)
+PALETTE MATERIAL 3 — A4E22
+L’interfaccia a schermo usa ruoli colore Material 3 nominati (primary/on-primary, container, surface/surface-container, on-surface, outline e error), in schemi chiaro e scuro derivati dal colore sorgente Ferlog #E20600 con Material Color Utilities. Gli errori sono distinti dal colore principale del brand; per lo stato positivo sono definiti token applicativi dedicati. I valori sono inclusi in CSS: non viene caricata alcuna libreria o risorsa online a runtime. Gli stili della media print non sono stati cambiati: misure, font, colori, profili e generazione dei cartellini restano invariati.
+
+INTERFACCIA MATERIAL 3 (A4E22)
 La UI è stata rifinita con superfici tonali, card a contorno morbido, stati di focus ad alto contrasto e componenti responsive. La landing di scelta profilo distingue chiaramente CLASSIC come profilo principale e MAXI come formato grande. Gli stili Material 3 agiscono solo sull’interfaccia a schermo: misure millimetriche, font, auto-fit e impaginazione dei cartellini stampati restano invariati.
 
 Questa variante deriva dalla A4E19. La A4E19, le versioni precedenti e gli archivi aziendali originali non sono stati modificati.
@@ -62,7 +65,7 @@ Al primo avvio si sceglie CLASSIC (profilo predefinito) o MAXI; il pulsante CAMB
 NUOVO NOME E NAVIGAZIONE
 Il titolo della pagina e il bookmark sono CartellinoSmart. Premi TAB per passare da un campo compilabile all’altro e INVIO per passare al cartellino successivo; quando ci sono suggerimenti codice/commessa, INVIO seleziona prima il suggerimento evidenziato. Guida rapida e segnalazioni sono espandibili; la sezione segnalazioni si trova sotto l’anteprima. Il pulsante mobile “Dati” torna all’inserimento.
 
-Il footer mostra CartellinoSmart v. 2.7-A4E21 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
+Il footer mostra CartellinoSmart v. 2.7-A4E22 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
 
 
 CODICI NON TROVATI
