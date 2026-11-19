@@ -1,22 +1,29 @@
-CARTELLINOSMART - VARIANTE A4E17
-A4 QUADRANTI, STOCK E FORZABILE, FONT CONSOLA MONO INCORPORATO
+CARTELLINOSMART - VARIANTE A4E21
+PROFILI CLASSIC/MAXI, FONT CONSOLA MONO INCORPORATO, OFFLINE
 
-Questa variante deriva dalla A4E16. La A4E16, la versione standard e gli archivi aziendali originali non sono stati modificati.
+INTERFACCIA MATERIAL 3 (A4E21)
+La UI è stata rifinita con superfici tonali, card a contorno morbido, stati di focus ad alto contrasto e componenti responsive. La landing di scelta profilo distingue chiaramente CLASSIC come profilo principale e MAXI come formato grande. Gli stili Material 3 agiscono solo sull’interfaccia a schermo: misure millimetriche, font, auto-fit e impaginazione dei cartellini stampati restano invariati.
+
+Questa variante deriva dalla A4E19. La A4E19, le versioni precedenti e gli archivi aziendali originali non sono stati modificati.
 
 FORMATO DI STAMPA
-Foglio A4 verticale, suddiviso in quattro quadranti uguali. In ogni quadrante è centrato un cartellino da 95 × 138,5 mm. Restano 5 mm di margine per lato in ogni quadrante. Per stampare scegliere A4 verticale, margini “Nessuno” e scala 100%; controllare che l’anteprima mostri quattro cartellini su un solo foglio.
+CLASSIC è il profilo predefinito: quattro cartellini 84 × 120 mm in griglia 2 × 2, centrati sul foglio A4, con contorno tratteggiato per il taglio. Per stampare scegliere A4, margini “Nessuno” e scala 100%; la nota anteprima indica il taglio.
+MAXI usa quattro quadranti A4 con un cartellino 95 × 138,5 mm centrato in ciascuno; scegliere A4 verticale, margini “Nessuno” e scala 100%.
 
 FONT E DIMENSIONI
 Tutti i testi stampati del cartellino (valori, intestazioni e lettere Q/K/E) usano Consola Mono nei pesi Book e Bold, incorporati direttamente in index.html. Il font non richiede installazione né connessione Internet.
 
-Codice materiale, descrizione, quantità, commessa e ubicazione restano maiuscoli con un massimo condiviso di 21 pt. Nei casi limite verificati restano tutti a 21 pt senza auto-riduzione: codice 20 caratteri, descrizione 50, commessa 12 e ubicazione 10. Solo contenuti più lunghi o particolarmente larghi attiveranno la riduzione di sicurezza; le descrizioni vanno a capo.
+Codice materiale, descrizione, quantità, commessa e ubicazione restano maiuscoli e usano lo stesso Consola Mono. Il massimo è 18 pt in CLASSIC e 21 pt in MAXI; l’auto-fit riduce solo i valori che non entrano nel campo e le descrizioni vanno a capo.
 
-Le intestazioni “CODICE MATERIALE”, “DESCRIZIONE”, “QTA”, “COMMESSA”, “UBICAZIONE” e “STOCK” restano a 8,5 pt, Regular (non grassetto), allineate a sinistra con margine uniforme. I valori restano centrati.
+Le intestazioni “CODICE MATERIALE”, “DESCRIZIONE”, “QTA”, “COMMESSA”, “UBICAZIONE” e “STOCK” sono Regular (non grassetto) e allineate a sinistra; misurano 7,4 pt in CLASSIC e 8,5 pt in MAXI. I valori restano centrati.
 
-Q/K/E sono portate a 42 pt; è in grassetto soltanto la lettera selezionata. Il peso Book (400) è usato per le intestazioni e le lettere stock non selezionate; Bold (700) per i valori e per la sola lettera stock selezionata. Non è distribuito alcun font secondario. La SIL Open Font License 1.1 e il FONTLOG sono incorporati nel codice HTML e inclusi anche come file separati.
+Q/K/E sono impostate a 36,5 pt in CLASSIC e 42 pt in MAXI; è in grassetto soltanto la lettera selezionata. Il peso Book (400) è usato per le intestazioni e le lettere stock non selezionate; Bold (700) per i valori e per la sola lettera stock selezionata. Non è distribuito alcun font secondario. La SIL Open Font License 1.1 e il FONTLOG sono incorporati nel codice HTML e inclusi anche come file separati.
 
 OPZIONE “FORZA STOCK E”
-Ogni riga ha il pulsante FORZA STOCK E, disattivato per impostazione predefinita e coordinato con cestino e bandierina; la forzatura vale solo sul cartellino stampato. Quando è attivo, sul solo cartellino di quella riga viene evidenziato lo stock E; il valore originale dell’anagrafica non viene modificato. L’etichetta “FORZA STOCK” e la lettera E sono visibili anche su schermi stretti.
+Solo il profilo MAXI mostra il pulsante FORZA STOCK E, disattivato per impostazione predefinita e coordinato con cestino e bandierina; il profilo CLASSIC non include questo selettore. La forzatura vale solo sul cartellino stampato. Quando è attivo, sul solo cartellino di quella riga viene evidenziato lo stock E; il valore originale dell’anagrafica non viene modificato. L’etichetta “FORZA STOCK” è più compatta e la lettera E resta visibile anche su schermi stretti; cestino e bandierina usano pulsanti icona da 40 × 39 px.
+
+CAMPO CODICE MATERIALE
+Il codice inserito è limitato a 22 caratteri. Su desktop il campo è circa il 21% più stretto rispetto alla A4E17; su telefono si adatta alla larghezza disponibile. Gli altri campi mantengono le dimensioni precedenti.
 
 AVVIO
 Estrai il pacchetto e apri index.html dalla cartella estratta con Chrome o Edge aggiornato. Tieni tutti i file inclusi nella stessa cartella per mantenere l’uso offline.
@@ -38,18 +45,25 @@ Non sono distribuiti font secondari: se il font incorporato non fosse disponibil
 
 
 LETTERE STOCK Q/K/E
-Anche Q, K ed E usano Consola Mono a 42 pt. Le lettere non selezionate sono Regular; soltanto quella selezionata (Q, K oppure E) è in Bold. Il glifo è rialzato otticamente di 1,3 mm; la X resta centrata nella cella ed è stata alleggerita. I pesi Consola Mono incorporati sono caricati prima della stampa.
+Q, K ed E usano Consola Mono a 36,5 pt in CLASSIC e 42 pt in MAXI. Le lettere non selezionate sono Regular; soltanto quella selezionata (Q, K oppure E) è in Bold. Il glifo è rialzato otticamente di 1,3 mm; la X resta centrata nella cella ed è stata alleggerita. I pesi Consola Mono incorporati sono caricati prima della stampa.
 
 LOGO HITACHI
 Il logo Hitachi con lo slogan “Inspire the Next” è incorporato nell’HTML in formato SVG vettoriale. Fonte: Wikimedia Commons, File:Hitachi.svg (autore indicato: Hitachi, Ltd.; Commons lo contrassegna come logo marchio).
 https://commons.wikimedia.org/wiki/File:Hitachi.svg
 
-ALTEZZE CAMPI
-Le sei righe rispettano le misure richieste nell’ordine dall’alto al basso: 19, 32, 30, 19, 19 e 19 mm.
-Cartellino esterno invariato: 95 × 138,5 mm. Tenendo conto dei bordi superiore e inferiore da 0,25 mm, le righe interne misurano: Codice 19 mm, Descrizione 32 mm, Logo 30 mm, QTA/Commessa 19 mm, Ubicazione 19 mm, Stock 19 mm. Il totale interno è 138 mm.
+ALTEZZE CAMPI E FORMATI
+MAXI mantiene il cartellino 95 × 138,5 mm e le sei righe da 19, 32, 30, 19, 19 e 19 mm (codice, descrizione, logo, QTA/commessa, ubicazione, stock).
+CLASSIC usa quattro cartellini 84 × 120 mm su A4, in griglia 2 × 2 centrata sul foglio. Le righe proporzionali sono 16,5, 27,5, 26, 16,5, 16,5 e 16,5 mm; il bordo esterno è tratteggiato per indicare il taglio. L’auto-fit font è specifico per ciascun formato.
 
+
+PROFILI DI STAMPA
+Al primo avvio si sceglie CLASSIC (profilo predefinito) o MAXI; il pulsante CAMBIA PROFILO, a sinistra del logo Ferlog, consente lo switch in ogni momento. La scelta è memorizzata sul dispositivo. I campi, l’anagrafica e le commesse sono condivisi e i cartellini già compilati non si perdono cambiando profilo. CLASSIC stampa quattro cartellini 84 × 120 mm centrati 2 × 2 con linee di taglio tratteggiate; MAXI stampa quattro cartellini grandi e separati. Il selettore stock è visibile solo in MAXI.
 
 NUOVO NOME E NAVIGAZIONE
-Il titolo della pagina e il bookmark sono CartellinoSmart. Premi TAB per passare da un campo compilabile all’altro e INVIO per passare alla riga successiva; quando ci sono suggerimenti codice/commessa, INVIO seleziona prima il suggerimento evidenziato. Guida rapida e segnalazioni sono espandibili; la sezione segnalazioni si trova sotto l’anteprima. Il pulsante mobile “Dati” torna all’inserimento.
+Il titolo della pagina e il bookmark sono CartellinoSmart. Premi TAB per passare da un campo compilabile all’altro e INVIO per passare al cartellino successivo; quando ci sono suggerimenti codice/commessa, INVIO seleziona prima il suggerimento evidenziato. Guida rapida e segnalazioni sono espandibili; la sezione segnalazioni si trova sotto l’anteprima. Il pulsante mobile “Dati” torna all’inserimento.
 
-Il footer mostra CartellinoSmart v. 2.7-A4E17 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
+Il footer mostra CartellinoSmart v. 2.7-A4E21 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
+
+
+CODICI NON TROVATI
+Se il codice inserito è errato o non presente in anagrafica, la segnalazione resta visibile nell’interfaccia ma la cella DESCRIZIONE del cartellino stampato resta vuota.
