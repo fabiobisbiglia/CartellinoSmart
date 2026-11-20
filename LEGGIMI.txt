@@ -1,16 +1,16 @@
-CARTELLINOSMART - VERSIONE 2.7.3
+CARTELLINOSMART - VERSIONE 2.7.4
 PROFILI CLASSIC/MAXI, FONT CONSOLA MONO INCORPORATO, PWA OFFLINE
 
-PALETTE MATERIAL 3 — VERSIONE 2.7.3
+PALETTE MATERIAL 3 — VERSIONE 2.7.4
 L’interfaccia a schermo usa ruoli colore Material 3 nominati (primary/on-primary, container, surface/surface-container, on-surface, outline e error), in schemi chiaro e scuro derivati dal colore sorgente Ferlog #E20600 con Material Color Utilities. Gli errori sono distinti dal colore principale del brand; per lo stato positivo sono definiti token applicativi dedicati. I valori sono inclusi in CSS: non viene caricata alcuna libreria o risorsa online a runtime. La stampa viene aggiornata solo nella disposizione CLASSIC: quattro cartellini contigui in un blocco 2 × 2 centrato. Le misure 84 × 120 mm, font, contenuti e auto-fit restano invariati; il layout MAXI non cambia.
 
-INTERFACCIA MATERIAL 3 (VERSIONE 2.7.3)
+INTERFACCIA MATERIAL 3 (VERSIONE 2.7.4)
 La UI è stata rifinita con superfici tonali, card a contorno morbido, stati di focus ad alto contrasto e componenti responsive. La landing di scelta profilo distingue chiaramente CLASSIC come profilo principale e MAXI come formato grande. Gli stili Material 3 agiscono solo sull’interfaccia a schermo. La griglia CLASSIC ora è contigua e centrata; dimensioni dei cartellini, font, auto-fit e logica di compilazione restano invariati. Il layout di stampa MAXI è invariato.
 
 Questa release prosegue la numerazione pubblica della serie 2.7.x dalla versione 2.7.2.
 
 INSTALLAZIONE COME APP — VERSIONE ONLINE
-La versione online su GitHub Pages può essere installata come app nei browser compatibili, ad esempio Edge e Chrome. Quando il browser la rende installabile, al primo avvio compare una proposta non obbligatoria con le opzioni “Installa” e “Continua nel browser”; la scelta viene ricordata per quel browser. Dopo la prima visita online, i file dell’app vengono conservati localmente dal service worker e CartellinoSmart può riaprirsi anche senza connessione. L’installazione richiede la versione HTTPS del sito; il file HTML aperto direttamente dal disco non può essere installato come PWA.
+La versione online su GitHub Pages può essere installata come app nei browser compatibili, ad esempio Edge e Chrome. Al primo avvio idoneo compare una proposta non obbligatoria con le opzioni “Installa” e “Continua nel browser”; se il browser non offre subito il pulsante nativo, la proposta indica dove trovare l’installazione nel menu. La scelta viene ricordata per quel browser. Dopo la prima visita online, i file dell’app vengono conservati localmente dal service worker e CartellinoSmart può riaprirsi anche senza connessione. L’installazione richiede la versione HTTPS del sito; il file HTML aperto direttamente dal disco non può essere installato come PWA.
 
 FORMATO DI STAMPA
 CLASSIC è il profilo predefinito: quattro cartellini 84 × 120 mm uniti in un blocco 2 × 2, centrato sul foglio A4. I lati si toccano e condividono una sola linea tratteggiata sulle giunzioni; il contorno tratteggiato indica il taglio. Per stampare scegliere A4, margini “Nessuno” e scala 100%; la nota anteprima indica il taglio.
@@ -68,7 +68,7 @@ Al primo avvio si sceglie CLASSIC (profilo predefinito) o MAXI; il pulsante CAMB
 NUOVO NOME E NAVIGAZIONE
 Il titolo della pagina e il bookmark sono CartellinoSmart. Premi TAB per passare da un campo compilabile all’altro e INVIO per passare al cartellino successivo; quando ci sono suggerimenti codice/commessa, INVIO seleziona prima il suggerimento evidenziato. Guida rapida e segnalazioni sono espandibili; la sezione segnalazioni si trova sotto l’anteprima. Il pulsante mobile “Dati” torna all’inserimento.
 
-Il footer mostra CartellinoSmart v. 2.7.3 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
+Il footer mostra CartellinoSmart v. 2.7.4 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
 
 
 CODICI NON TROVATI
