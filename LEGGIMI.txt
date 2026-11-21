@@ -68,7 +68,10 @@ Al primo avvio si sceglie CLASSIC (profilo predefinito) o MAXI; il pulsante CAMB
 NUOVO NOME E NAVIGAZIONE
 Il titolo della pagina e il bookmark sono CartellinoSmart. Premi TAB per passare da un campo compilabile all’altro e INVIO per passare al cartellino successivo; quando ci sono suggerimenti codice/commessa, INVIO seleziona prima il suggerimento evidenziato. Guida rapida e segnalazioni sono espandibili; la sezione segnalazioni si trova sotto l’anteprima. Il pulsante mobile “Dati” torna all’inserimento.
 
-Il footer mostra CartellinoSmart v. 3.0.0 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
+Il footer mostra CartellinoSmart v. 3.0.1 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
+
+VERSIONE 3.0.1 — CORREZIONE INTERAZIONE TOUCH
+Il selettore FORZA STOCK E del profilo MAXI applica la grafica hover solo sui dispositivi con puntatore; su smartphone la resa attiva dipende esclusivamente dallo stato del pulsante.
 
 
 CODICI NON TROVATI
