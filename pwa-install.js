@@ -53,6 +53,11 @@
     installButton.textContent = promptEvent ? 'Installa' : 'Come installare';
   }
 
+  window.cartellinoOpenInstallDialog = function () {
+    if (!dialog || dialog.open) return;
+    updateInstallAction();
+    dialog.showModal();
+  };
   function showSuggestion() {
     if (suggestionScheduled || !dialog || !installButton || !laterButton ||
         !window.isSecureContext || !isChromiumBrowser() || isStandalone() || wasDismissed()) return;
