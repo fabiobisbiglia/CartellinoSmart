@@ -1,4 +1,4 @@
-CARTELLINOSMART - VERSIONE 3.1.1
+CARTELLINOSMART - VERSIONE 3.1.2
 PROFILI CLASSIC/MAXI, FONT CONSOLA MONO INCORPORATO, PWA OFFLINE
 
 PALETTE MATERIAL 3 — VERSIONE 3.0.0
@@ -68,7 +68,7 @@ Al primo avvio si sceglie CLASSIC (profilo predefinito) o MAXI; il pulsante CAMB
 NUOVO NOME E NAVIGAZIONE
 Il titolo della pagina e il bookmark sono CartellinoSmart. Premi TAB per passare da un campo compilabile all’altro e INVIO per passare al cartellino successivo; quando ci sono suggerimenti codice/commessa, INVIO seleziona prima il suggerimento evidenziato. Guida rapida e segnalazioni sono espandibili; la sezione segnalazioni si trova sotto l’anteprima. Il pulsante mobile “Dati” torna all’inserimento.
 
-Il footer mostra CartellinoSmart v. 3.1.1 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
+Il footer mostra CartellinoSmart v. 3.1.2 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
 
 VERSIONE 3.0.1 — CORREZIONE INTERAZIONE TOUCH
 Il selettore FORZA STOCK E del profilo MAXI applica la grafica hover solo sui dispositivi con puntatore; su smartphone la resa attiva dipende esclusivamente dallo stato del pulsante.
@@ -84,3 +84,7 @@ Le schede di inserimento sono state riorganizzate in una struttura coerente su d
 
 VERSIONE 3.1.1 — CORREZIONE HEADER E GRIGLIA
 Ripristinato l’header a tre aree conforme al mockup: marchio CartellinoSmart a sinistra, logo Ferlog centrato e comandi profilo, tema e installazione a destra (su smartphone il comando installazione resta disponibile nel menu nativo del browser). Corretta l’eredità delle coordinate CSS della vecchia scheda, che alterava l’ordine e la larghezza dei campi nella nuova impaginazione.
+
+
+VERSIONE 3.1.2 — CONTROLLI COMMESSA, COPIE E TEMA SCURO
+Il campo Commessa usa un solo controllo per codice, descrizione della commessa selezionata e apertura dell’elenco; la descrizione si aggiorna con la selezione e rimane completa nell’elenco dei suggerimenti. Il controllo Copie riprende il formato compatto del mockup, con meno e più integrati in un’unica superficie. La palette scura torna alle superfici blu, inclusi header e riquadri iniziali. Il pulsante Installa app mantiene testo bianco ad alto contrasto anche in hover e focus. Anagrafica, commesse, comportamento di compilazione e formati di stampa non sono stati modificati.
