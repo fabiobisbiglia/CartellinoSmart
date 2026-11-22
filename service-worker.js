@@ -1,7 +1,7 @@
-/* CartellinoSmart 3.1.2 — cache offline dell'applicazione. Incrementare il nome cache a ogni release. */
+/* CartellinoSmart 3.1.3 — cache offline dell'applicazione. Incrementare il nome cache a ogni release. */
 'use strict';
 
-const CACHE_NAME = 'cartellinosmart-3.1.2';
+const CACHE_NAME = 'cartellinosmart-3.1.3';
 const APP_SHELL = [
   './',
   './index.html',
