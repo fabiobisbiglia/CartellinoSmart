@@ -1,4 +1,4 @@
-CARTELLINOSMART - VERSIONE 3.1.3
+CARTELLINOSMART - VERSIONE 3.1.4
 PROFILI CLASSIC/MAXI, FONT CONSOLA MONO INCORPORATO, PWA OFFLINE
 
 PALETTE MATERIAL 3 — VERSIONE 3.0.0
@@ -68,7 +68,7 @@ Al primo avvio si sceglie CLASSIC (profilo predefinito) o MAXI; il pulsante CAMB
 NUOVO NOME E NAVIGAZIONE
 Il titolo della pagina e il bookmark sono CartellinoSmart. Premi TAB per passare da un campo compilabile all’altro e INVIO per passare al cartellino successivo; quando ci sono suggerimenti codice/commessa, INVIO seleziona prima il suggerimento evidenziato. Guida rapida e segnalazioni sono espandibili; la sezione segnalazioni si trova sotto l’anteprima. Il pulsante mobile “Dati” torna all’inserimento.
 
-Il footer mostra CartellinoSmart v. 3.1.3 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
+Il footer mostra CartellinoSmart v. 3.1.4 e non viene stampato. La cronologia versioni non è più presente nell’interfaccia.
 
 VERSIONE 3.0.1 — CORREZIONE INTERAZIONE TOUCH
 Il selettore FORZA STOCK E del profilo MAXI applica la grafica hover solo sui dispositivi con puntatore; su smartphone la resa attiva dipende esclusivamente dallo stato del pulsante.
@@ -92,3 +92,7 @@ Il campo Commessa usa un solo controllo per codice, descrizione della commessa s
 
 VERSIONE 3.1.3 — RIFINITURE COMMESSA, MAXI E TEMA CHIARO
 La descrizione della commessa rimane su una riga nei layout desktop/notebook e il testo completo resta disponibile nel suggerimento. Il controllo FORZA STOCK E ha altezza uniforme di 40 px e non mostra più l’etichetta “STOCK · SOLO MAXI”. Il tema chiaro usa superfici bianche e grigie con sfondo #f9f9fb; il tema scuro blu e le dimensioni e logiche di stampa non cambiano.
+
+
+VERSIONE 3.1.4 — AVVIO TEMA, PALETTE NEUTRA E DESKTOP AMPIO
+Il tema salvato viene applicato nell’head prima dei fogli di stile e del primo rendering, evitando il flash iniziale della palette predefinita. I token chiari sono stati neutralizzati eliminando le tonalità rosate. L’header usa una card coerente con le altre sezioni; sui monitor larghi la pagina si espande fino a 1500 px e distribuisce meglio i campi della riga senza introdurre overflow. Nessuna modifica ai dati o alla stampa.
