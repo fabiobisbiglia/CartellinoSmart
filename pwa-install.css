@@ -1,30 +1,34 @@
 #cartellinosmart-install-prompt {
+  position: fixed;
+  inset: 0;
   width: min(420px, calc(100vw - 32px));
   max-width: calc(100vw - 32px);
+  max-height: calc(100dvh - 32px);
+  overflow: auto;
+  margin: auto;
   padding: 24px;
-  border: 1px solid var(--md-sys-color-outline, #d9dee4);
+  border: 1px solid var(--olv, #d6dce3);
   border-radius: 24px;
-  background: var(--md-sys-color-surface, #fff);
-  color: var(--md-sys-color-on-surface, #1f2933);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, .22);
+  background: var(--card, #fff);
+  color: var(--on, #1b232c);
+  box-shadow: var(--e3, 0 16px 48px rgba(20, 30, 45, .22));
+  font-family: var(--font, "Segoe UI", Arial, sans-serif);
 }
 
 #cartellinosmart-install-prompt::backdrop {
-  background: rgba(18, 20, 24, .42);
+  background: var(--scrim, rgba(14, 20, 27, .5));
 }
 
 #cartellinosmart-install-prompt h2 {
   margin: 0 0 10px;
-  font-size: 20px;
-  line-height: 1.3;
-  font-weight: 650;
+  color: var(--on, #1b232c);
+  font: 700 20px/1.3 var(--fd, "Segoe UI", Arial, sans-serif);
 }
 
 #cartellinosmart-install-prompt p {
   margin: 0;
-  color: var(--md-sys-color-on-surface-variant, #59636e);
-  font-size: 14px;
-  line-height: 1.5;
+  color: var(--onv, #56606c);
+  font: 400 14px/1.5 var(--font, "Segoe UI", Arial, sans-serif);
 }
 
 #cartellinosmart-install-actions {
@@ -40,23 +44,48 @@
   padding: 0 16px;
   border: 0;
   border-radius: 999px;
-  font: 600 14px "Segoe UI", Calibri, Arial, sans-serif;
+  font: 600 14px/1 var(--font, "Segoe UI", Arial, sans-serif);
   cursor: pointer;
+  transition: border-radius .25s, filter .2s, transform .15s;
+}
+
+#cartellinosmart-install-prompt button:hover {
+  filter: brightness(.96);
+}
+
+#cartellinosmart-install-prompt button:active {
+  transform: scale(.98);
 }
 
 #cartellinosmart-install-later {
-  background: var(--md-sys-color-surface-container, #f1f3f6);
-  color: var(--md-sys-color-on-surface, #1f2933);
+  background: var(--sc, #dde5ee);
+  color: var(--onsc, #1a2733);
 }
 
 #cartellinosmart-install-now {
-  background: var(--md-sys-color-primary, #e20600);
-  color: var(--md-sys-color-on-primary, #fff);
+  background: var(--p, #c00500);
+  color: var(--onp, #fff);
+  box-shadow: var(--e1, 0 1px 2px rgba(20, 30, 45, .08));
 }
 
 #cartellinosmart-install-prompt button:focus-visible {
-  outline: 2px solid var(--md-sys-color-primary, #e20600);
+  outline: 2px solid var(--p, #c00500);
   outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  #cartellinosmart-install-prompt {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  #cartellinosmart-install-actions {
+    justify-content: stretch;
+  }
+
+  #cartellinosmart-install-actions button {
+    flex: 1 1 130px;
+  }
 }
 
 @media print {
