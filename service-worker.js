@@ -1,7 +1,7 @@
-/* CartellinoSmart 3.2.0 — cache offline dell'applicazione. Incrementare il nome cache a ogni release. */
+/* CartellinoSmart 3.2.1 — cache offline dell'applicazione. Incrementare il nome cache a ogni release. */
 'use strict';
 
-const CACHE_NAME = 'cartellinosmart-3.2.0';
+const CACHE_NAME = 'cartellinosmart-3.2.1';
 const APP_SHELL = [
   './',
   './index.html',
@@ -11,8 +11,8 @@ const APP_SHELL = [
   './manifest.webmanifest',
   './pwa-install.css',
   './pwa-install.js',
-  './icons/cartellinosmart-192.png',
-  './icons/cartellinosmart-512.png'
+  './icons/cartellinosmart-192-v3.2.1.png',
+  './icons/cartellinosmart-512-v3.2.1.png'
 ];
 
 self.addEventListener('install', event => {
